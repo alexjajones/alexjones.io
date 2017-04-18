@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Simple preact/webpack/typescript boiler plate.",
+  "main": "app.tsx",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "webpack-dev-server --env.build=dev",
+    "start:prod": "webpack-dev-server --env.build=prod",
+    "build:dev": "webpack --env.build=dev",
+    "build:prod": "webpack --env.build=prod"
+  },
+  "author": "Alex Jones",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "preact": "^8.1.0"
+  }
+}

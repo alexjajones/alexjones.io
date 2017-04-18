@@ -1,0 +1,27 @@
+body {
+  margin: 0px
+}
+
+.container {
+  max-width: 800px;
+  height:    100%;
+  margin:    auto;
+  padding:   15px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+
+  &.twitter {
+    background-image: url('../../assets/twitter.svg');
+  }
+
+  &.github {
+    background-image: url('../../assets/github.svg');
+  }
+}
