@@ -1,5 +1,10 @@
+@import '~styles/variables';
+
 body {
-  margin: 0px
+  font-family: 'Montserrat', sans-serif;
+  color: $slate;
+  font-weight: 300;
+  margin: 0;
 }
 
 .container {
@@ -9,19 +14,11 @@ body {
   padding:   15px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
+h1, h2 {
+  font-weight: 700;
+  color: $pale-red;
 }
 
-.icon {
-  height: 30px;
-  width: 30px;
-
-  &.twitter {
-    background-image: url('../../assets/twitter.svg');
-  }
-
-  &.github {
-    background-image: url('../../assets/github.svg');
-  }
+h3, h4 {
+  font-weight: 300;
 }

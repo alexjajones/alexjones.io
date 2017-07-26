@@ -1,0 +1,10 @@
+@import '~styles/variables';
+
+.badge {
+  background-color: $peach;
+  padding:          5px;
+  border-radius:    3px;
+  display:          inline-block;
+  color:            white;
+  margin:           0 7px 4px 0;
+}

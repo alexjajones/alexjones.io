@@ -1,45 +1,21 @@
 .home {
-  .hero {
-    height:     500px;
-    width:      100%;
-    background: #3A1C71; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color:      white;
-
-    h1 {
-      font-size:     60px;
-      margin-bottom: 0;
-    }
-
-    .hero-inner {
-      text-align: center;
-      margin-top: -120px;
-
-      .icon {
-        display: inline-block;
-        cursor: pointer;
-      }
-
-      .twitter {
-        margin-left: 15px;
-      }
-    }
-
-    .container {
-      display:         flex;
-      align-items:     center;
-      justify-content: center;
-    }
+  .content {
+    margin: 20px 5%;
   }
-  .selfie-container {
-    background-image: url('../../assets/me.jpg');
-    background-size:  cover;
-    margin:           -125px auto auto;
-    background-color: black;
-    border:           white 3px solid;
-    height:           250px;
-    width:            250px;
-    border-radius:    125px;
+
+  .experience-container {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .activity-container {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .footer {
+    text-align: center;
   }
 }

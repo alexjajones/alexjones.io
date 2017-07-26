@@ -9,7 +9,11 @@ module.exports = function () {
             filename: 'app.js'
         },
         resolve: {
-            extensions: ['.js', '.ts', '.tsx']
+            extensions: ['.js', '.ts', '.tsx'],
+			alias: {
+				styles: path.resolve(__dirname, '../src/core/styles/'),
+				components: path.resolve(__dirname, '../src/components/')
+			}
         },
         module: {
             rules: [
