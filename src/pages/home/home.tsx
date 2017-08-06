@@ -1,25 +1,25 @@
 import {h, Component} from 'preact';
-import Hero from "./hero/hero";
-import Experience from "./experience/experience";
 
 import './home.scss'
+import {fetchEntriesForContentType} from "../../services/contentful";
+import PostListComponent from "components/post-list/post-list";
 
 export default class HomeComponent extends Component<{}, any> {
+    public componentDidMount() {
+        fetchEntriesForContentType().then(posts => this.setState({posts: posts}))
+    }
+
     render() {
         return <div className='home'>
-            <Hero/>
             <div className="content">
-                <div className="experience-container">
-                    <Experience/>
+                <div className="recent-posts">
+                    <h1>Recent Posts</h1>
+                    <PostListComponent posts={this.state.posts || []}/>
                 </div>
                 <div className="activity-container">
-                    <h2>Upcoming Talks</h2>
+                    <h1>Upcoming Talks</h1>
                     <p>Sept 26th 2017 - Javascript 101 Workshop</p>
-                    <h2>Blog posts</h2>
                 </div>
-            </div>
-            <div className="footer">
-                <p> Made with Preact ❤️ <br/> Alexjones.io - Source on Github</p>
             </div>
         </div>
     }

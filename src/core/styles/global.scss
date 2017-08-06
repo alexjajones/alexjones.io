@@ -5,20 +5,40 @@ body {
   color: $slate;
   font-weight: 300;
   margin: 0;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
   height:    100%;
   margin:    auto;
   padding:   15px;
 }
 
-h1, h2 {
+h1 {
   font-weight: 700;
   color: $pale-red;
+  text-shadow:0 0 1px transparent;
 }
 
-h3, h4 {
+h2, h3, h4 {
   font-weight: 300;
+}
+
+pre {
+  background-color: $default-code-background;
+  color: $default-code-color;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+blockquote {
+  border-left: 5px solid $pale-red;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: $slate;
 }

@@ -3,15 +3,20 @@
     "module": "commonjs",
     "jsx": "react",
     "jsxFactory": "h",
-    "target": "es5",
+    "target": "es6",
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
       "styles/*": ["src/core/styles/"],
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "pages/*": ["src/pages/*"],
+      "react": ["preact-compat"],
+      "react-dom": ["preact-compat"],
+      "create-react-class": ["preact-compat/lib/create-react-class"]
     }
   }
 }

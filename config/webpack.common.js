@@ -12,7 +12,11 @@ module.exports = function () {
             extensions: ['.js', '.ts', '.tsx'],
 			alias: {
 				styles: path.resolve(__dirname, '../src/core/styles/'),
-				components: path.resolve(__dirname, '../src/components/')
+				components: path.resolve(__dirname, '../src/components/'),
+				pages: path.resolve(__dirname, '../src/pages/'),
+				react: 'preact-compat',
+				'react-dom': 'preact-compat',
+				'create-react-class': 'preact-compat/lib/create-react-class'
 			}
         },
         module: {
@@ -31,7 +35,7 @@ module.exports = function () {
                     loader:'file-loader'
                 },
                 {
-                    test: /\.scss$/,
+                    test: /\.(scss|css)$/,
                     use: [{
                         loader: "style-loader" // creates style nodes from JS strings
                     }, {
